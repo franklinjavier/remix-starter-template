@@ -1531,6 +1531,13 @@
     set-cookie-parser "^2.4.8"
     source-map "^0.7.3"
 
+"@remix-run/vercel@^1.7.6":
+  version "1.7.6"
+  resolved "https://registry.yarnpkg.com/@remix-run/vercel/-/vercel-1.7.6.tgz#7f7368c5fa341e3801fb0231e390c1961656cec3"
+  integrity sha512-GMRNYzEI0Yyjl0JO1HQcZvAffLljR5VEkTJ/UK6RB5xfjb8gbzrIGyqJfI8X2L9L1Y3vE6JghX6Aw0S1NF8oOw==
+  dependencies:
+    "@remix-run/node" "1.7.6"
+
 "@remix-run/web-blob@^3.0.3", "@remix-run/web-blob@^3.0.4":
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/@remix-run/web-blob/-/web-blob-3.0.4.tgz#99c67b9d0fb641bd0c07d267fd218ae5aa4ae5ed"

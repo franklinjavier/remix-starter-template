@@ -2,7 +2,5 @@
   "build": {
     "env": {}
   },
-  "redirects": [
-    { "source": "/dashboard", "destination": "/" }
-  ]
+  "redirects": [{ "source": "/dashboard", "destination": "/" }]
 }

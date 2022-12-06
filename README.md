@@ -7,3 +7,4 @@
 - Eslint
 - Prettier
 - Typescript
+- Plop to generate components

@@ -1,8 +1,7 @@
+import type { LinksFunction, LoaderFunctionArgs } from '@remix-run/node'
 import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from '@remix-run/react'
 
 import styles from './globals.css'
-
-import type { LinksFunction, LoaderFunctionArgs } from '@remix-run/node'
 
 export const links: LinksFunction = () => [
   { rel: 'stylesheet', href: styles },

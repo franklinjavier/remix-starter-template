@@ -1,14 +1,6 @@
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
-  extends: [
-    '@remix-run/eslint-config',
-    '@remix-run/eslint-config/node',
-    '@remix-run/eslint-config/jest-testing-library',
-    'prettier',
-    'plugin:import/errors',
-    'plugin:import/warnings',
-  ],
-  plugins: ['import'],
+  extends: ['@remix-run/eslint-config', '@remix-run/eslint-config/node', 'prettier'],
   rules: {
     'import/default': 'error',
     'import/export': 'error',
@@ -22,8 +14,6 @@ module.exports = {
           order: 'asc',
           caseInsensitive: true,
         },
-        'newlines-between': 'always',
-        groups: ['builtin', 'external', ['parent', 'index', 'sibling', 'internal'], 'type', 'object'],
         pathGroups: [
           {
             pattern: '~/**',

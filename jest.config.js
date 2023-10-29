@@ -1,6 +1,6 @@
 /** @type {import('@jest/types').Config.InitialOptions} */
 
-module.exports = {
+export default {
   collectCoverage: true,
   testEnvironment: 'jest-environment-jsdom',
   testMatch: ['<rootDir>/app/**/*.test.[jt]s?(x)'],

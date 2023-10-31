@@ -1,9 +1,8 @@
 # Remix Starter Template
 
+- Remix ❤️ Vite
 - Tailwind
 - Jest
-- Commitzen
-- Husky
 - Eslint
 - Prettier
 - Typescript

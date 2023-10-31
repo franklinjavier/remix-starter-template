@@ -1,10 +1,9 @@
 import type { LinksFunction, LoaderFunctionArgs } from '@remix-run/node'
 import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from '@remix-run/react'
 
-import styles from './globals.css'
+import './globals.css'
 
 export const links: LinksFunction = () => [
-  { rel: 'stylesheet', href: styles },
   {
     rel: 'icon',
     href: '/logo.svg',
@@ -37,8 +36,8 @@ export default function App() {
         />
         <Outlet />
         <ScrollRestoration />
-        <Scripts />
         <LiveReload />
+        <Scripts />
       </body>
     </html>
   )

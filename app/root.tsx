@@ -1,4 +1,4 @@
-import type { LinksFunction, LoaderFunctionArgs } from '@remix-run/node'
+import type { LinksFunction } from '@remix-run/node'
 import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from '@remix-run/react'
 
 import './globals.css'
@@ -10,10 +10,6 @@ export const links: LinksFunction = () => [
     type: 'image/svg',
   },
 ]
-
-export async function loader({ request }: LoaderFunctionArgs) {
-  return true
-}
 
 export default function App() {
   return (

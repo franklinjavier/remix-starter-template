@@ -11,10 +11,6 @@ export const links: LinksFunction = () => [
   },
 ]
 
-export async function loader({ request }: LoaderFunctionArgs) {
-  return true
-}
-
 export default function App() {
   return (
     <html lang="en">

@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@remix-run/dev": "^2.4.0",
-    "@remix-run/eslint-config": "^2.4.0",
+    "@remix-run/eslint-config": "^2.4.1",
     "@remix-run/testing": "^2.4.0",
     "@testing-library/jest-dom": "^6.1.5",
     "@testing-library/react": "^14.1.2",

@@ -24,7 +24,7 @@
   "dependencies": {
     "@remix-run/node": "^2.7.2",
     "@remix-run/react": "^2.7.2",
-    "@remix-run/serve": "^2.7.2",
+    "@remix-run/serve": "^2.8.0",
     "clsx": "2.1.0",
     "isbot": "^3.8.0",
     "lucide-react": "^0.336.0",

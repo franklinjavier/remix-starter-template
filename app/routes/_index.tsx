@@ -1,6 +1,7 @@
 import { type MetaFunction } from '@remix-run/node'
 import { Title } from '~/components/title'
-import { auth, useUser } from '~/modules/auth'
+import { auth } from '~/modules/.server/auth.server'
+import { useUser } from '~/modules/auth'
 
 export const meta: MetaFunction = () => {
   return [{ title: 'Remix Starter Template' }, { name: 'description', content: 'Remix Starter Template' }]

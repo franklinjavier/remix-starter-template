@@ -1,7 +1,8 @@
 import type { LinksFunction } from '@remix-run/node'
-import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from '@remix-run/react'
+import { Links, Meta, Outlet, Scripts, ScrollRestoration } from '@remix-run/react'
 
 import './globals.css'
+import { useUser } from './modules/auth'
 
 export const links: LinksFunction = () => [
   {
@@ -12,6 +13,8 @@ export const links: LinksFunction = () => [
 ]
 
 export default function App() {
+  const user = useUser()
+  console.log(user)
   return (
     <html lang="en">
       <head>
@@ -26,13 +29,13 @@ export default function App() {
           https://github.com/remix-run/remix/issues/4822
         */}
         <script
+          // biome-ignore lint/security/noDangerouslySetInnerHtml: see the comment above
           dangerouslySetInnerHTML={{
             __html: `document.querySelectorAll("html > script").forEach((s) => s.parentNode?.removeChild(s));`,
           }}
         />
         <Outlet />
         <ScrollRestoration />
-        <LiveReload />
         <Scripts />
       </body>
     </html>

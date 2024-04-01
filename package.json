@@ -22,7 +22,7 @@
     "updatedeps": "pnpm upgrade -i --latest"
   },
   "dependencies": {
-    "@remix-run/node": "^2.8.0",
+    "@remix-run/node": "^2.8.1",
     "@remix-run/react": "^2.8.0",
     "@remix-run/serve": "^2.8.0",
     "@vercel/remix": "^2.8.0",

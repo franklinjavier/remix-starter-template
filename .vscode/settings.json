@@ -1,11 +1,14 @@
 {
+  "editor.formatOnSave": false,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },
-  "editor.formatOnPaste": true,
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "eslint.format.enable": true,
-  "eslint.validate": ["typescript", "typescriptreact", "javascript", "javascriptreact"],
-  "eslint.packageManager": "pnpm"
+  "tailwindCSS.experimental.classRegex": [":\\s*?[\"'`]([^\"'`]*).*?,"],
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "package.json": ".eslint*, prettier*, tsconfig*, vite*, pnpm-lock*, bun.lockb, nest*, biome*, .editorconfig*, .nvmrc*, .gitignore*",
+    "tailwind.config.*": "tailwind.config*, postcss.config*",
+    ".env.local": ".env*",
+    ".env": ".env*"
+  }
 }

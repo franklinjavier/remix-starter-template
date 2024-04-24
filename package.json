@@ -19,7 +19,8 @@
     "test:dev": "jest --watchAll",
     "test": "jest --forceExit --no-cache",
     "type-check": "tsc",
-    "updatedeps": "pnpm upgrade -i --latest"
+    "updatedeps": "pnpm upgrade -i --latest",
+    "prepare": "husky"
   },
   "dependencies": {
     "@remix-run/node": "^2.9.0",

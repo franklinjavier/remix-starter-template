@@ -1,4 +1,4 @@
-import {cn} from '../cn'
+import { cn } from '../cn'
 
 describe('cn', () => {
   it('returns empty string for no parameters', () => {
@@ -32,4 +32,3 @@ describe('cn', () => {
     ).toBe('base valid yes appear')
   })
 })
-

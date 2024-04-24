@@ -18,11 +18,17 @@ type QueryStringProps = [
  * @returns {function} Function to change query string programatically
  * @returns {string} The query string (same as location.search), eg: `?search=foo`
  */
-export function useQueryString(key: string, defaultValue?: string): QueryStringProps {
+export function useQueryString(
+  key: string,
+  defaultValue?: string,
+): QueryStringProps {
   const [searchParams, setSearchParams] = useSearchParams()
   const paramValue = searchParams.get(key)
 
-  const value = React.useMemo(() => paramValue ?? defaultValue ?? '', [paramValue, defaultValue])
+  const value = React.useMemo(
+    () => paramValue ?? defaultValue ?? '',
+    [paramValue, defaultValue],
+  )
 
   const setValue = React.useCallback(
     (newValue: string, options?: NavigateOptions) => {

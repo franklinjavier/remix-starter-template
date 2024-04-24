@@ -10,6 +10,5 @@ node_modules
 /build/
 /api/*
 /coverage
-.jest/
 .DS_Store
 tailwind.css

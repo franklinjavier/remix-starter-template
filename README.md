@@ -2,7 +2,7 @@
 
 - Remix ❤️ Vite
 - Tailwind
-- Jest
+- Vitest
 - Eslint
 - Prettier
 - Typescript

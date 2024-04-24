@@ -14,7 +14,10 @@ function AllTheProviders({ children }: { children: ReactNode }) {
   return <RemixStub />
 }
 
-export function renderWithRouter(ui: ReactElement, options?: Omit<RenderOptions, 'wrapper'>) {
+export function renderWithRouter(
+  ui: ReactElement,
+  options?: Omit<RenderOptions, 'wrapper'>,
+) {
   const user = userEvent.setup()
 
   return {

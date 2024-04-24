@@ -8,15 +8,15 @@
     "email": "franklinjalves@gmail.com"
   },
   "scripts": {
-    "dev": "vite dev",
-    "build": "vite build && vite build --ssr",
-    "start": "remix-serve ./build/index.js",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "build": "remix vite:build",
     "clean": "rm -rf node_modules pnpm-lock.yaml",
+    "dev": "remix vite:dev",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "start": "remix-serve ./build/server/index.js",
+    "test": "vitest",
     "typecheck": "tsc",
     "generate": "plop",
-    "test": "vitest",
     "type-check": "tsc",
     "updatedeps": "pnpm upgrade -i --latest",
     "prepare": "husky"

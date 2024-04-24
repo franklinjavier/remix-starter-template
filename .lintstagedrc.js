@@ -11,8 +11,9 @@ const escapeFileNamesForPrettier = (filenames) =>
 
 export default {
   '**/*.{js,jsx,ts,tsx}': (filenames) => {
+    console.log(filenames);
     return [
-      `eslint --fix ${filenames
+      `pnpm lint --fix ${filenames
         .filter((file) => !eslint.isPathIgnored(file))
         .map((f) => `"${f}"`)
         .join(' ')}`,

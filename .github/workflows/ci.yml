@@ -21,7 +21,7 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version-file: '.nvmrc'
+          node-version-file: ".nvmrc"
 
       - uses: pnpm/action-setup@v3
         name: Install pnpm
@@ -43,10 +43,13 @@ jobs:
             ${{ runner.os }}-pnpm-store-
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm i
 
       - name: Run ESLint
         run: pnpm lint
 
+      - name: Run Typecheck
+        run: pnpm tsc
+
       - name: Run Tests
-        run: pnpm test
+        run: pnpm t
